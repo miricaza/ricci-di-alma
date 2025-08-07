@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <header>
+        <h1>Ricci di Alma</h1>
+      </header>
+
+      <main>
+        <section>
+          <img
+            src="https://via.placeholder.com/600x300"
+            alt="Imagem destaque"
+          />
+          <p>Bem-vinda à Ricci di Alma — onde alma e estilo se encontram.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Contate-nos:</p>
+        <ul>
+          <li>
+            <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/SEUINSTAGRAM" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://facebook.com/SEUFACEBOOK" target="_blank">Facebook</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
